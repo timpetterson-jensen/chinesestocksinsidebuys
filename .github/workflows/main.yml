@@ -2,9 +2,9 @@ name: China Stock Insider Buying Screener
 
 on:
   schedule:
-    # Runs daily at 12:00 UTC (8:00 AM EST)
+    # Runs daily at 12:00 UTC (8:00 AM EST / 5:00 AM PST)
     - cron: '0 12 * * *'
-  workflow_dispatch: # Allows manual run from GitHub Actions UI
+  workflow_dispatch: # Allows manual trigger from GitHub Actions UI
 
 jobs:
   run-screener:
